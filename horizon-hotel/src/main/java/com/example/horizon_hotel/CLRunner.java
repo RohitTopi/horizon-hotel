@@ -1,6 +1,6 @@
 package com.example.horizon_hotel;
 
-import com.example.horizon_hotel.data.entity.Guest;
+/*import com.example.horizon_hotel.data.entity.Guest;
 import com.example.horizon_hotel.data.entity.Reservation;
 import com.example.horizon_hotel.data.entity.Room;
 import com.example.horizon_hotel.data.repository.GuestRepository;
@@ -12,12 +12,12 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.Optional;
+import java.util.Optional;*/
 
-@Component
-public class CLRunner implements CommandLineRunner {
+//@Component
+public class CLRunner /*implements CommandLineRunner */{
 
-    private final RoomRepository roomRepository;
+    /*private final RoomRepository roomRepository;
     private final GuestRepository guestRepository;
     private final ReservationRepository reservationRepository;
     private final RoomReservationService roomReservationService;
@@ -34,7 +34,7 @@ public class CLRunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-        /*System.out.printf("printing all rooms =================");
+        *//*System.out.printf("printing all rooms =================");
         List<Room> rooms = this.roomRepository.findAll();
         Optional<Room> room = this.roomRepository.findByRoomNumberIgnoreCase("p1");
         System.out.println(room);
@@ -50,11 +50,11 @@ public class CLRunner implements CommandLineRunner {
         List<Reservation> reservations = this.reservationRepository.findAll();
         System.out.println(reservations);
         reservations.forEach(System.out::println);
-*/
+*//*
 
         List<RoomReservation> reservations = this.roomReservationService.getRoomReservationsForDate("2023-08-28");
         reservations.forEach(reservation -> {
             System.out.printf(String.valueOf(reservation));
         });
-    }
+    }*/
 }
